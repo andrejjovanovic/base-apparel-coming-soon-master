@@ -21,18 +21,22 @@ p {
 }
 
 .container {
-    margin: 20 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -705px;
+    top: 50%;
+    margin-top: -400px;
 }
 
-.red {
+.content-container {
     background-image: url(../images/bg-pattern-desktop.svg);
     float: left;
-   /*height: 800px;*/
-   width: min-content;
+    height: 600px;
+    width: 400px;
     padding: 100px 200px 100px 200px;
 }
 
-.green {
+.image-container {
     float: left;
     width: min-content;
 }
@@ -41,22 +45,26 @@ p {
     display: none;
 }
 
-.subscribe-form {
-    border: solid black 2px;
-    border-radius: 30px;
-    padding: 3px;
-}
-
 .subscribe-form-input {
-    border: none;
+    border-width: 1.5px;
+    border-color: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%);
+    border-right: none;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    width: 70%;
+    height: 30px;
 }
 
 .subscribe-form-submit{
-    background-image: url(../images/icon-arrow.svg);
-    background-repeat: no-repeat;
+    height: 38px;
+    width: 60px;
     border: none;
     border-radius: 30px;
-    background-color: rosybrown;
+    background-color: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%);
+    margin-left: -13%;
+    /* height: 60px; */
     
 }
 
@@ -64,8 +72,12 @@ p {
 
 .attribution {
     font-size: 11px;
-    text-align: center;
     clear: both;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 50%;
+    margin-left: -60px;
 }
 
 .attribution a {
